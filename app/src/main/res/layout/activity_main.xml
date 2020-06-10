@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2747B0"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="casual"
+        android:text="@string/tn_public_exam_results"
+        android:textColor="#F7F3FF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="casual"
+        android:text="Smile Please!"
+        android:textColor="#FFDD00"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/cool2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head" />
+
+    <TextView
+        android:id="@+id/cool2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="casual"
+        android:text="Stay Cool!"
+        android:textColor="#FFDD00"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cool" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="396dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/cardview_light_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="25dp"
+        app:cardMaxElevation="25dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cool2">
+
+        <Button
+            android:id="@+id/opensite"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="13dp"
+            android:shadowColor="#2196F3"
+            android:text="SERVER 1"
+            android:textColor="#FF007B"
+            android:textColorHint="#FF2222"
+            app:layout_constraintBottom_toTopOf="@+id/opensite4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/opensite2"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="146dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginBottom="17dp"
+            android:shadowColor="#2196F3"
+            android:text="SERVER 2"
+            android:textColor="#FF007B"
+            android:textColorHint="#FF2222"
+            app:layout_constraintBottom_toTopOf="@+id/opensite3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/opensite" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:shadowColor="@color/cardview_dark_background"
+        android:text="All the Best!"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
